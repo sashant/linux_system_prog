@@ -15,9 +15,8 @@ struct thr_arg
 
 //char *shm;
 pthread_mutex_t lock;
-//static int k = 0;
 
-void * thr_func(void *arg)
+void *thr_func(void *arg)
 {
 	int i;
 	pthread_mutex_lock(&lock);
